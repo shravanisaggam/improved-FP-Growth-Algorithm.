@@ -1,2 +1,11 @@
 
-rnfjdgndfjvdrger
+TITLE: AN IMPROVED FP-GROWTH ALGORITHM IN ASSOCIATION RULES MINING.
+
+OBJECTIVE: 
+
+Association rules mining is an important technology in data mining. FP-Growth (frequent-pattern growth) algorithm is a classical algorithm in association rules mining. But the FP-Growth algorithm in mining needs two times to scan database, which reduces the efficiency of algorithm. Through the study of association rules mining and FP-Growth algorithm, I worked out improved algorithms of FP-Growth algorithm—Painting-Growth algorithm and N (not) Painting-Growth algorithm (removes the painting steps, and uses another way to achieve). I compared two kinds of improved algorithms with FP-Growth algorithm. Experimental results show that Painting-Growth algorithm is more than 1050 and N Painting-Growth algorithm is less than 10000 in data volume; the performance of the two kinds of improved algorithms is better than that of FP-Growth algorithm.
+
+FP-Growth (frequent-pattern growth) algorithm is an improved algorithm of the Apriori algorithm put forward by Jiawei Han and so forth. It compresses data sets to a FP-tree, scans the database twice, does not produce the candidate item sets in mining process, and greatly improves the mining efficiency. But FP-Growth algorithm needs to create a FP-tree which contains all the data sets. This FP-tree has high requirement on memory space. And scanning the database twice also makes the efficiency of FP-Growth algorithm not high.
+
+N Painting-Growth algorithm builds two-item permutation sets to find association sets of all frequent items and then digs up all the frequent item sets according to the association sets. Painting-Growth algorithm builds an association picture based on the two-item permutation sets to find association sets of all frequent items and then digs up all the frequent item sets according to the association sets. Both of the improved algorithms scanning the database only once, improving the overhead of scanning database twice in traditional FP-Growth algorithm, and completing the mining only according to two-item permutation sets, thus, have the advantages of running faster, taking up small space in memory, having low complexity, and being easy to maintain.
+
